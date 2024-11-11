@@ -1,0 +1,45 @@
+.titlebar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  position: fixed;
+  width: 100vw;
+  height: 2rem;
+  padding-right: 1rem;
+  background-color: var(--color-bg-primary);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.button:hover {
+  color: var(--color-accent-light);
+  background-color: var(--color-bg-secondary);
+}
+
+.button:hover .maximize {
+  border-color: var(--color-accent-light);
+}
+
+.minimize {
+  display: flex;
+  justify-content: center;
+}
+
+.maximize {
+  display: flex;
+  align-items: center;
+  width: 0.625rem;
+  height: 0.625rem;
+  border: solid var(--color-text-primary) 1px;
+}

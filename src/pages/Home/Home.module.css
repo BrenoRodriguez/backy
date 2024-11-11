@@ -1,0 +1,11 @@
+.nav,
+.nav:visited {
+  color: var(--color-text-primary);
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: 0.4s ease-in;
+}
+
+.nav:hover {
+  color: var(--color-accent-light);
+}

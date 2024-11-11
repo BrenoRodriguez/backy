@@ -1,0 +1,26 @@
+.cardTitle {
+  display: inline-block;
+  position: relative;
+  font-size: 1.15rem;
+  color: var(--color-text-primary);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.titleTooltip {
+  margin-top: -0.5rem;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  background-color: var(--color-bg-secondary);
+  border: solid var(--color-border-gray) 1px;
+  color: var(--color-text-secondary);
+  padding: 0.5rem 0.5rem;
+  z-index: 1;
+  transition: 0.4s ease-in-out;
+}
+
+.cardTitle:hover + .titleTooltip,
+.titleTooltip:hover {
+  opacity: 1;
+}

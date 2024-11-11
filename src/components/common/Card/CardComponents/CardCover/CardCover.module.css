@@ -1,0 +1,32 @@
+.cardCover {
+  position: relative;
+  width: 200px;
+}
+
+.cardImage {
+  width: 200px;
+  height: 18.75rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  user-select: none;
+}
+
+.editButton {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  top: 0;
+  cursor: pointer;
+}
+
+.editButton svg {
+  transition: 0.4s ease-in-out;
+}
+
+.cardCover:hover .editButton {
+  opacity: 1;
+}
+
+.editButton:hover svg {
+  fill: var(--color-accent-light);
+}

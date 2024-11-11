@@ -1,0 +1,31 @@
+.optionContainer {
+  display: flex;
+  gap: 0.15rem;
+}
+
+.option {
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border-gray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  gap: 0.45rem;
+  padding: 0 0.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.4 ease-in-out;
+  text-wrap: nowrap;
+}
+
+.option:hover {
+  background-color: #282828;
+}
+
+.removeButton {
+  transition: color 0.3s ease-in-out;
+}
+
+.removeButton:hover {
+  color: var(--color-accent-lighter);
+}

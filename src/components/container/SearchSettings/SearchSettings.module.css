@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 3rem;
+}
+
+.filter,
+.sort {
+  color: var(--color-text-secondary);
+  font-size: 1.15rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+
+.filter {
+  background-color: transparent;
+  border: none;
+}
+
+.filter:hover {
+  color: var(--color-accent-light);
+}

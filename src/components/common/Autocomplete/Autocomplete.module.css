@@ -1,0 +1,42 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: relative;
+}
+
+.label {
+  color: var(--color-text-primary);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.helper {
+  position: relative;
+  display: inline-block;
+}
+
+.input {
+  /*Style*/
+  font-family: 'Roboto', sans-serif;
+  caret-color: var(--color-text-secondary);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-secondary);
+  border: 2px solid var(--color-border-gray);
+  border-radius: 0.25rem;
+  /*Size*/
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0.25rem 0.5rem;
+  /*Animation*/
+  transition: all 0.4s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent-light);
+}
+.input:hover {
+  border-color: var(--color-accent-main);
+}

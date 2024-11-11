@@ -1,0 +1,43 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #121212eb;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+  background-color: var(--color-bg-secondary);
+  padding: 2rem 3rem;
+  border-radius: 0.25rem;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  padding: 1rem 0;
+  justify-content: space-between;
+  color: var(--color-text-primary);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.closeButton {
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  transition: all 0.4s;
+}
+
+.closeButton:hover {
+  color: var(--color-accent-light);
+}

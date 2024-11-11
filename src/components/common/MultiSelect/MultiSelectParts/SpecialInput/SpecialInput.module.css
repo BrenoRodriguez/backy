@@ -1,0 +1,38 @@
+.fakeInput {
+  position: relative;
+  display: flex;
+  /*Style*/
+  font-family: 'Roboto', sans-serif;
+  caret-color: var(--color-text-secondary);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-secondary);
+  border: 2px solid var(--color-border-gray);
+  border-radius: 0.25rem;
+  /*Size*/
+  width: 60ch;
+  /*Animation*/
+  transition: all 0.4s ease-in-out;
+}
+
+.fakeInput:focus-within {
+  outline: none;
+  border-color: var(--color-accent-light);
+}
+
+.fakeInput:hover {
+  border-color: var(--color-accent-main);
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 0.25rem 0.5rem;
+  color: var(--color-text-secondary);
+}
+
+.input:focus {
+  outline: none;
+}

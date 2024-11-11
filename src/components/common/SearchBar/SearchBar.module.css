@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  border: solid var(--color-accent-main) 1px;
+  border-radius: 50px;
+  padding: 0.45rem 1rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.wrapper:focus-within {
+  border-color: var(--color-accent-light);
+}
+
+.wrapper:focus-within .search,
+.wrapper:focus-within .delete {
+  color: var(--color-accent-light);
+  fill: var(--color-accent-light) !important;
+}
+
+.search,
+.input,
+.delete {
+  background-color: var(--color-bg-primary);
+  border: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.input {
+  color: var(--color-text-primary);
+  caret-color: var(--color-text-primary);
+  font-size: 1.15rem;
+  padding: 0.15rem 0.5rem;
+  text-align: center;
+  width: 36ch;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.delete {
+  font-size: 1.3rem;
+  line-height: 0;
+  font-weight: 400;
+  font-family: 'Roboto Sans', sans-serif;
+  color: var(--color-accent-main);
+  transition: all 0.4s ease;
+}
+
+.wrapper:focus-within .delete:hover {
+  color: var(--color-accent-main);
+}

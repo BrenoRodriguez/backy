@@ -1,0 +1,62 @@
+.form {
+  display: grid;
+  align-items: center;
+  grid-template:
+    'cover content'
+    '. button';
+  column-gap: 5rem;
+  row-gap: 1.25rem;
+}
+
+.cover {
+  grid-area: cover;
+  width: 300px;
+  height: 480px;
+  border-radius: 8px;
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.genreLabel {
+  color: var(--color-text-primary);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.genreWrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  grid-area: button;
+  font-size: 1.15rem;
+  padding: 0.75rem 2rem;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 3px;
+  color: var(--color-text-primary);
+  background-color: var(--color-accent-main);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  width: 35ch;
+  align-self: center;
+  margin-top: 0.5rem;
+  justify-self: center;
+}
+
+.button:hover {
+  background-color: var(--color-accent-light);
+}

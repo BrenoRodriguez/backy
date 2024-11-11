@@ -1,0 +1,40 @@
+.field {
+  display: inline-block;
+}
+
+.label {
+  text-align: center;
+  font-size: 1.1rem;
+  padding-bottom: 0.45rem;
+}
+
+.input {
+  /*Style*/
+  font-family: 'Roboto', sans-serif;
+  border: solid var(--color-border-gray) 2px;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+  caret-color: var(--color-text-secondary);
+  cursor: pointer;
+
+  /*Size*/
+  font-size: 1rem;
+  line-height: 1.75rem;
+  padding: 0.15rem 0.5rem;
+  height: 36.78px;
+
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.input:hover {
+  outline: none;
+  border-color: var(--color-accent-light);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-accent-light);
+  cursor: text;
+}

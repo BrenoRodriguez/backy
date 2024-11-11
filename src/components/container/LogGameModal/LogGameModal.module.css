@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.genreLabel {
+  color: var(--color-text-primary);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.genreWrapper {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitButton {
+  font-size: 1.15rem;
+  padding: 0.75rem 2rem;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 3px;
+  color: var(--color-text-primary);
+  background-color: var(--color-accent-main);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  width: 25ch;
+  align-self: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: var(--color-accent-light);
+}
