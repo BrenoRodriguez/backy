@@ -1,7 +1,7 @@
 import { ComponentProps } from 'react'
-import styles from './Autocomplete.module.css'
 import useAutoComplete from '../../../hooks/useAutocomplete'
 import SuggestionsDropdown from '../SuggestionsDropdown/SuggestionsDropdown'
+import styles from './Autocomplete.module.css'
 
 type AutocompleteProps = ComponentProps<'input'> & {
   allOptions: string[]
@@ -9,12 +9,7 @@ type AutocompleteProps = ComponentProps<'input'> & {
   width?: string
 }
 
-const Autocomplete = ({
-  allOptions,
-  label,
-  width = '60ch',
-  ...inputProps
-}: AutocompleteProps) => {
+const Autocomplete = ({ allOptions, label, width = '60ch', ...inputProps }: AutocompleteProps) => {
   const {
     updateFilter,
     selectOption,

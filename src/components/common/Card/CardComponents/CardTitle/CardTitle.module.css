@@ -5,6 +5,7 @@
   color: var(--color-text-primary);
   padding: 1rem;
   cursor: pointer;
+  text-wrap: nowrap;
 }
 
 .titleTooltip {

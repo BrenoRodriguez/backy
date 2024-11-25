@@ -14,6 +14,8 @@
 
 .genreWrapper {
   display: flex;
+  gap: 1rem;
+  padding-bottom: 0.25rem;
 }
 
 .row {
@@ -31,10 +33,9 @@
   background-color: var(--color-accent-main);
   border: none;
   cursor: pointer;
-  transition: all 0.4s;
   width: 25ch;
   align-self: center;
-  transition: all 0.4s ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .submitButton:hover {

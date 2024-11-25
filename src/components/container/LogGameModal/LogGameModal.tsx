@@ -1,11 +1,12 @@
+import { useEffect } from 'react'
+import { useDebouncedFormSubmit } from '../../../hooks/useDebounceFunction'
+import useLogGameSubmit from '../../../hooks/useLogGameSubmit'
 import suggestions from '../../../utils/suggestion-data'
+import Autocomplete from '../../common/Autocomplete/Autocomplete'
 import Modal from '../../common/Modal/Modal'
 import MultiSelect from '../../common/MultiSelect/MultiSelect'
 import TextInput from '../../common/TextInput/TextInput'
 import styles from './LogGameModal.module.css'
-import Autocomplete from '../../common/Autocomplete/Autocomplete'
-import useLogGameSubmit from '../../../hooks/useLogGameSubmit'
-import { useEffect } from 'react'
 
 interface LogGameModalProps {
   isLogGameModalVisible: boolean
@@ -19,7 +20,7 @@ const LogGameModal = ({
   inputRef,
 }: LogGameModalProps) => {
   const { genre, setGenre, handleLogGameSubmit } = useLogGameSubmit()
-
+  const debouncedSubmit = useDebouncedFormSubmit(handleLogGameSubmit, toggleLogGameModal)
   useEffect(() => {
     if (isLogGameModalVisible) {
       setTimeout(() => {
@@ -39,7 +40,9 @@ const LogGameModal = ({
       <form
         className={styles.form}
         autoComplete='off'
-        onSubmit={(ev) => handleLogGameSubmit(ev, toggleLogGameModal)}
+        onSubmit={(ev) => {
+          debouncedSubmit(ev)
+        }}
       >
         <TextInput
           label='Name'

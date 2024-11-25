@@ -6,7 +6,7 @@
   width: 100vw;
   height: 2rem;
   padding-right: 1rem;
-  background-color: var(--color-bg-primary);
+  background-color: transparent;
 }
 
 .button {
